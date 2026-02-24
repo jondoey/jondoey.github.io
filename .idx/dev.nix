@@ -5,8 +5,8 @@
   channel = "stable-24.11"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.nodejs_20
-    pkgs.zulu
+    pkgs.ruby
+    pkgs.jekyll
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -26,7 +26,7 @@
     workspace = {
       onCreate = {
         default.openFiles = [
-          "src/app/page.tsx"
+          "index.html"
         ];
       };
     };
@@ -35,7 +35,7 @@
       enable = true;
       previews = {
         web = {
-          command = ["npm" "run" "dev" "--" "--port" "$PORT" "--hostname" "0.0.0.0"];
+          command = ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--port", "$PORT"];
           manager = "web";
         };
       };
