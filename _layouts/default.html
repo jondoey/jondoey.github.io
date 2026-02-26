@@ -1,9 +1,106 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        border-bottom: 2px solid #007bff;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+
+      main {
+        margin-bottom: 30px;
+      }
+
+      .image-section {
+        margin: 30px 0;
+        text-align: center;
+      }
+
+      .image-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .image-caption {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      footer {
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        text-align: center;
+        color: #666;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+        }
+      }
+    </style>
   </head>
   <body>
-    {{ content }}
+    <div class="container">
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
+      
+      <main>
+        {{ content }}
+      </main>
+
+      {% if page.image %}
+      <section class="image-section">
+        <img src="{{ page.image }}" alt="{{ page.image_alt | default: 'Page image' }}">
+        {% if page.image_caption %}
+          <p class="image-caption">{{ page.image_caption }}</p>
+        {% endif %}
+      </section>
+      {% endif %}
+
+      <footer>
+        <p>&copy; 2026 jondoey. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
