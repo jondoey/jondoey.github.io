@@ -47,7 +47,7 @@
       }
 
       .image-section img {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -81,13 +81,6 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>{{ page.title }}</h1>
-      </header>
-      
-      <main>
-        {{ content }}
-      </main>
 
       {% if page.image %}
       <section class="image-section">
@@ -97,6 +90,11 @@
         {% endif %}
       </section>
       {% endif %}
+      
+      <main>
+        {{ content }}
+      </main>
+
 
       <footer>
         <p>&copy; 2026 jondoey. All rights reserved.</p>
