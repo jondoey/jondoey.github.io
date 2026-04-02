@@ -1,2 +1,14 @@
-title: My Personal Blog
-description: A collection of my personal journals.
+title: Mohali Institute of Sciences
+description: Minimal personal journal site for the School of Computer Sciences.
+url: ""
+baseurl: ""
+
+site_name: Mohali Institute of Sciences
+site_department: School of Computer Sciences
+professor_name: Jonathan Doey
+professor_designation: School of Computer Sciences
+professor_research_field: Theoretical Computer Science
+journal_heading: My Journals
+logo_path: /assets/images/logo.png
+portrait_placeholder_path: /assets/images/portrait-placeholder.svg
+footer_text: Mohali Institute of Sciences

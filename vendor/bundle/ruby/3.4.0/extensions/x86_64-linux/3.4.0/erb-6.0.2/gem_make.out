@@ -1,0 +1,19 @@
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/erb-6.0.2/ext/erb/escape
+/usr/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/erb-6.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260402-3407841-pyn95v sitelibdir\=./.gem.20260402-3407841-pyn95v clean
+
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/erb-6.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260402-3407841-pyn95v sitelibdir\=./.gem.20260402-3407841-pyn95v
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/erb-6.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260402-3407841-pyn95v sitelibdir\=./.gem.20260402-3407841-pyn95v install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20260402-3407841-pyn95v/erb
+
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/erb-6.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260402-3407841-pyn95v sitelibdir\=./.gem.20260402-3407841-pyn95v clean

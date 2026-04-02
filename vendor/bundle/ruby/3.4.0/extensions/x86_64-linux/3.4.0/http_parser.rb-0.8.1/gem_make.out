@@ -1,0 +1,19 @@
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260402-774685-au2nku sitelibdir\=./.gem.20260402-774685-au2nku clean
+
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260402-774685-au2nku sitelibdir\=./.gem.20260402-774685-au2nku
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260402-774685-au2nku sitelibdir\=./.gem.20260402-774685-au2nku install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260402-774685-au2nku
+
+current directory: /home/tdey/src/github/jondoey.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260402-774685-au2nku sitelibdir\=./.gem.20260402-774685-au2nku clean
